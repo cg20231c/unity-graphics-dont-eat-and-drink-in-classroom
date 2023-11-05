@@ -1,6 +1,7 @@
 | Nama | NRP |Github |  
 |---------------------------|------------|--------|  
-|Ihsan Widagdo | 5025211231 | https://github.com/dagdo03 |  
+|Ihsan Widagdo | 5025211231 | https://github.com/dagdo03 | 
+|Lihardo Marson Purba | 5025211238 | https://github.com/Lihardo_238 |
 
 # Variety of Geometry
 In the context of the Unity game engine, there are various geometries that can be used to create and manipulate 3D and 2D objects within the game environment. Some of the commonly used geometric shapes and concepts in Unity include:
