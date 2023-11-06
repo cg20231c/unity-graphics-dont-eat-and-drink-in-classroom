@@ -20,3 +20,12 @@ In the context of the Unity game engine, there are various geometries that can b
 6. Particles: Unity's particle system allows developers to create various special effects, such as fire, smoke, water, and explosions. These particle systems use geometry to represent and simulate the behavior of these effects in the game world.
 
 These are some of the key geometric concepts and elements that are commonly used in Unity to create and design game environments, objects, and effects. By leveraging these geometric tools, developers can build visually appealing and immersive experiences for players.
+
+### Meshes
+In geometry, a mesh typically refers to a collection of vertices, edges, and faces that define the shape of a three-dimensional object. These elements are fundamental in creating 3D models and are extensively used in computer graphics, simulations, and various fields involving 3D design.
+
+Here's a breakdown of the components of a mesh:
+
+1. Vertices (or Points): These are individual points in a 3D space. They are defined by their coordinates (x, y, z) and act as the building blocks of the mesh.
+2. Edges: Edges are the lines connecting pairs of vertices. They form the basic structure of the mesh, outlining the shape and providing a framework for the faces.
+3. Faces (Polygons): Faces are flat surfaces formed by connecting three or more vertices with edges. They enclose a space and define the surface of the mesh. Common types of faces are triangles (3 vertices), quadrilaterals (4 vertices), and more complex polygons.
