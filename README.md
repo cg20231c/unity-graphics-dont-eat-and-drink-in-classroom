@@ -20,7 +20,7 @@ In the context of the Unity game engine, there are various geometries that can b
 2. Edge
    - Consist of vertices and edge
    ![Ss Soal1](Images/Screenshot%202023-11-06%20172950.png)
-    Here is the code for line :
+   Here is the code for line :
   ```C#
 using UnityEngine;
 
@@ -52,48 +52,89 @@ public class LineDrawer : MonoBehaviour
   ```
 3. Mesh
    - A mesh is a collection of vertices, edges, and faces that represent the shape and structure of a 3D object. These components are organized in a way that allows the object to be rendered and interact with other objects in the game world. 
-    ![Ss Soal1](Images/Screenshot%202023-11-06%20174402.png)
+    ![Ss Soal1](Images/Screenshot%202023-11-06%20195545.png)
 
     Here's the code for mesh above :
-   ```C#
-      using System.Collections;
-      using System.Collections.Generic;
-      using UnityEngine;
+```C#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-      public class CustomMesh : MonoBehaviour
-      {
-        // Start is called before the first frame update
-        void Start()
-        {
+public class CustomMesh : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
         Mesh mesh = new Mesh();
         mesh.vertices = new Vector3[]
         {
             new Vector3(0, 0, 0), // Vertex 1
             new Vector3(5, 0, 0), // Vertex 2
-            new Vector3(10, 5, 0) // Vertex 3
+            new Vector3(10, 5, 0), // Vertex 3
+            new Vector3(0,0,-3),
+            new Vector3(5,0,-3),
+            new Vector3(10,5,-3),
         };
 
-        mesh.triangles = new int[] { 0, 1, 2 }; // Triangle indices
-
+        mesh.triangles = 
+            new int[] { 0, 1, 2,
+                        0, 2, 3,
+                        3, 2, 5,
+                        5, 3, 4,
+                        4, 1, 5,
+                        5, 2, 1,
+                        1, 4, 3,
+                        3, 0, 1
+                        }; // Triangle indices
         // Optional: Define UV coordinates for textures (if using textures)
         mesh.uv = new Vector2[]
         {
+            //left triangle
+            new Vector2(0, 0),
+            new Vector2(0, 1),
+            new Vector2(1, 0),
+            //top part - left
+            new Vector2(0, 1),
             new Vector2(0, 0),
             new Vector2(1, 0),
-            new Vector2(0.5f, 1)
+            //top part - right
+            new Vector2(1, 0),
+            new Vector2(1, 1),
+            new Vector2(0, 1),
+            //right part
+            new Vector2(0, 0),
+            new Vector2(1, 0),
+            new Vector2(1, 1),
+            //back part - left
+            new Vector2(0, 1),
+            new Vector2(0, 0),
+            new Vector2(1, 0),
+            //back part - right
+            new Vector2(1, 0),
+            new Vector2(1, 1),
+            new Vector2(0, 1),
+            //down part - left
+            new Vector2(0, 0),
+            new Vector2(0, 1),
+            new Vector2(1, 1),
+            //down part - right
+            new Vector2(0, 0),
+            new Vector2(1, 0),
+            new Vector2(1, 1)
         };
 
         mesh.RecalculateNormals(); // Recalculate normals for lighting
 
         // Assign the created mesh to the Mesh Filter component
         GetComponent<MeshFilter>().mesh = mesh;
-        }
+    }
 
-        // Update is called once per frame
-        void Update()
-        {
-            // Add any update logic here if needed
-        }
-      }
+    // Update is called once per frame
+    void Update()
+    {
+        // Add any update logic here if needed
+    }
+   }
+
 
    ```
