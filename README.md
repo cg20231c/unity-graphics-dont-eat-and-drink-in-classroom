@@ -20,7 +20,6 @@ In the context of the Unity game engine, there are various geometries that can b
 6. Particles: Unity's particle system allows developers to create various special effects, such as fire, smoke, water, and explosions. These particle systems use geometry to represent and simulate the behavior of these effects in the game world.
 
 These are some of the key geometric concepts and elements that are commonly used in Unity to create and design game environments, objects, and effects. By leveraging these geometric tools, developers can build visually appealing and immersive experiences for players.
-<<<<<<< ihsan
 
 ### Procedural Geometry
 Procedural geometry in Unity refers to the process of generating and manipulating 3D or 2D shapes and models dynamically at runtime, without relying on pre-made assets. Instead of using static meshes or models, procedural geometry involves algorithmic generation or modification of geometric shapes, terrains, or structures to create dynamic and customizable content.
@@ -124,5 +123,3 @@ public class CreateParticle : MonoBehaviour
 }
 
 ```
-=======
->>>>>>> main
