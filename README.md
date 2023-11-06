@@ -138,3 +138,18 @@ public class CustomMesh : MonoBehaviour
 
 
    ```
+
+## Terrain
+-   In Unity, a "Terrain" refers to a type of object used to create and represent outdoor environments, such as landscapes, mountains, forests, and other natural terrains. Unity provides a Terrain system, which is a built-in feature that allows developers to generate and manipulate terrains within their game or application. Terrains are commonly used to create large outdoor scenes, open-world environments, or terrain-based simulations.
+
+There are 5 main part of sub-utils in terrain :
+1. Create Neighbor Terrains
+-   The "Create Neighbor Terrains" sub-utils in Unity's Terrain Inspector allow you to generate neighboring terrains that seamlessly connect to the edges of an existing terrain. This is particularly useful when you want to create a larger, continuous terrain by tiling or stitching multiple terrains together.
+2. Paint Terrain
+-   The "Paint Terrain" sub-utils in Unity's Terrain Inspector allow you to paint textures and details onto your terrain. This is essential for adding ground textures, such as grass, sand, rocks, or dirt, to make your terrain look realistic.
+3. Paint Trees
+-   Painting trees on a Unity terrain is a crucial aspect of creating realistic outdoor environments. The "Paint Trees" tool in the Terrain Inspector enables you to place trees on your terrain to add vegetation and create lush, natural landscapes.
+4. Paint Details
+-   Painting details on a Unity terrain, such as grass, flowers, rocks, or other small objects, can significantly enhance the visual quality and realism of outdoor scenes. The "Paint Details" tool in the Terrain Inspector allows you to place and customize these small objects.
+5. Terrain Settings
+Unity's Terrain settings are parameters and properties that allow you to configure and fine-tune the behavior and appearance of a terrain in your scene. These settings are accessible in the Terrain Inspector and provide control over various aspects of the terrain.
