@@ -29,3 +29,117 @@ Here's a breakdown of the components of a mesh:
 1. Vertices (or Points): These are individual points in a 3D space. They are defined by their coordinates (x, y, z) and act as the building blocks of the mesh.
 2. Edges: Edges are the lines connecting pairs of vertices. They form the basic structure of the mesh, outlining the shape and providing a framework for the faces.
 3. Faces (Polygons): Faces are flat surfaces formed by connecting three or more vertices with edges. They enclose a space and define the surface of the mesh. Common types of faces are triangles (3 vertices), quadrilaterals (4 vertices), and more complex polygons.
+
+Here's the example to create a simple mesh using code:
+```c
+using UnityEngine;
+
+public class CreateMesh : MonoBehaviour
+{
+    void Start()
+    {
+        // Create a new mesh
+        Mesh mesh = new Mesh();
+
+        // Define the vertices of the mesh
+        Vector3[] vertices = new Vector3[62];
+        // F Front face
+        vertices[0] = new Vector3(0.3f, 0f, 0.1f);
+        vertices[1] = new Vector3(0.35f, 0f, 0.1f);
+        vertices[2] = new Vector3(0.35f, 1f, 0.1f);
+        vertices[3] = new Vector3(0.3f, 1f, 0.1f);
+        vertices[4] = new Vector3(0.3f, 0.95f, 0.1f);
+        vertices[5] = new Vector3(0.65f, 0.95f, 0.1f);
+        vertices[6] = new Vector3(0.65f, 1f, 0.1f);
+        vertices[7] = new Vector3(0.3f, 0.525f, 0.1f);
+        vertices[8] = new Vector3(0.3f, 0.475f, 0.1f);
+        vertices[9] = new Vector3(0.65f, 0.475f, 0.1f);
+        vertices[10] = new Vector3(0.65f, 0.525f, 0.1f);
+
+        // F Back face
+        vertices[11] = new Vector3(0.3f, 0f, -0.1f);
+        vertices[12] = new Vector3(0.35f, 0f, -0.1f);
+        vertices[13] = new Vector3(0.35f, 1f, -0.1f);
+        vertices[14] = new Vector3(0.3f, 1f, -0.1f);
+        vertices[15] = new Vector3(0.3f, 0.95f, -0.1f);
+        vertices[16] = new Vector3(0.65f, 0.95f, -0.1f);
+        vertices[17] = new Vector3(0.65f, 1f, -0.1f);
+        vertices[18] = new Vector3(0.3f, 0.525f, -0.1f);
+        vertices[19] = new Vector3(0.3f, 0.475f, -0.1f);
+        vertices[20] = new Vector3(0.65f, 0.475f, -0.1f);
+        vertices[21] = new Vector3(0.65f, 0.525f, -0.1f);
+
+        // F Left face
+        vertices[22] = new Vector3(0.3f, 0f, 0.1f);
+        vertices[23] = new Vector3(0.3f, 0f, -0.1f);
+        vertices[24] = new Vector3(0.3f, 1f, -0.1f);
+        vertices[25] = new Vector3(0.3f, 1f, 0.1f);
+
+        // F Right face
+        vertices[26] = new Vector3(0.65f, 0.95f, -0.1f);
+        vertices[27] = new Vector3(0.65f, 1f, -0.1f);
+        vertices[28] = new Vector3(0.65f, 1f, 0.1f);
+        vertices[29] = new Vector3(0.65f, 0.95f, 0.1f);
+        vertices[30] = new Vector3(0.35f, 0.95f, 0.1f);
+        vertices[31] = new Vector3(0.35f, 0.95f, -0.1f);
+        vertices[32] = new Vector3(0.35f, 0.525f, -0.1f);
+        vertices[33] = new Vector3(0.35f, 0.525f, 0.1f);
+        vertices[34] = new Vector3(0.65f, 0.525f, 0.1f);
+        vertices[35] = new Vector3(0.65f, 0.525f, -0.1f);
+        vertices[36] = new Vector3(0.65f, 0.475f, -0.1f);
+        vertices[37] = new Vector3(0.65f, 0.475f, 0.1f);
+        vertices[38] = new Vector3(0.35f, 0.475f, 0.1f);
+        vertices[39] = new Vector3(0.35f, 0.475f, -0.1f);
+        vertices[40] = new Vector3(0.35f, 0f, -0.1f);
+        vertices[41] = new Vector3(0.35f, 0f, 0.1f);
+
+        // F Top face
+        vertices[42] = new Vector3(0.3f, 1f, 0.1f);
+        vertices[43] = new Vector3(0.3f, 1f, -0.1f);
+        vertices[44] = new Vector3(0.65f, 1f, -0.1f);
+        vertices[45] = new Vector3(0.65f, 1f, 0.1f);
+        vertices[46] = new Vector3(0.35f, 0.525f, 0.1f);
+        vertices[47] = new Vector3(0.35f, 0.525f, -0.1f);
+        vertices[48] = new Vector3(0.65f, 0.525f, -0.1f);
+        vertices[49] = new Vector3(0.65f, 0.525f, 0.1f);
+
+        // F Bottom face
+        vertices[50] = new Vector3(0.3f, 0f, 0.1f);
+        vertices[51] = new Vector3(0.3f, 0f, -0.1f);
+        vertices[52] = new Vector3(0.35f, 0f, -0.1f);
+        vertices[53] = new Vector3(0.35f, 0f, 0.1f);
+        vertices[54] = new Vector3(0.35f, 0.475f, 0.1f);
+        vertices[55] = new Vector3(0.35f, 0.475f, -0.1f);
+        vertices[56] = new Vector3(0.65f, 0.475f, -0.1f);
+        vertices[57] = new Vector3(0.65f, 0.475f, 0.1f);
+        vertices[58] = new Vector3(0.35f, 0.95f, 0.1f);
+        vertices[59] = new Vector3(0.35f, 0.95f, -0.1f);
+        vertices[60] = new Vector3(0.65f, 0.95f, -0.1f);
+        vertices[61] = new Vector3(0.65f, 0.95f, 0.1f);
+
+
+        // Define the triangles of the mesh
+        int[] triangles = new int[96] { 0, 1, 2, 0, 2, 3, 2, 4, 5, 2, 5, 6, 7, 8, 9, 7, 9, 10, // F Front face
+        11, 12, 13, 11, 13, 14, 13, 15, 16, 13, 16, 17, 18, 19, 20, 18, 20, 21, // F Back face
+        22, 23, 24, 22, 24, 25, // F Left face
+        26, 27, 28, 26, 28, 29, 30, 31, 32, 30, 32, 33, 34, 35, 36, 34, 36, 37, 38, 39, 40, 38, 40, 41, // F Right face
+        42, 43, 44, 42, 44, 45, 46, 47, 48, 46, 48, 49, // F Top face
+        50, 51, 52, 50, 52, 53, 54, 55, 56, 54, 56, 57, 58, 59, 60, 58, 60, 61, // F Bottom face
+        };
+
+        // Assign the vertices and triangles to the mesh
+        mesh.vertices = vertices;
+        mesh.triangles = triangles;
+
+        // Recalculate the bounds of the mesh
+        mesh.RecalculateBounds();
+
+        // Create a new game object
+        GameObject meshObject = new GameObject("CustomMesh");
+
+        // Add a mesh filter and renderer to the game object
+        meshObject.AddComponent<MeshFilter>().mesh = mesh;
+        meshObject.AddComponent<MeshRenderer>().material = new Material(Shader.Find("Standard"));
+    }
+}
+```
