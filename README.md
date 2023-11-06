@@ -194,3 +194,12 @@ public class createRotateCube : MonoBehaviour
 ```
 Here's the result:
 ![Alt text](<prim.png>)
+
+### Geometry Dimension 
+Geometry dimension refers to type of dimension of objects that usually used in the realm of geometry.
+Some common dimensions include:
+
+0-Dimensional: Points - characterized by having no length, width, or height.
+1-Dimensional: Lines - formed by connecting an infinite number of points. They have length but no width or height.
+2-Dimensional: Shapes - such as squares, circles, triangles, and polygons, having length and width but no height.
+3-Dimensional: Objects with length, width, and height, like cubes, spheres, pyramids, and other three-dimensional figures.
