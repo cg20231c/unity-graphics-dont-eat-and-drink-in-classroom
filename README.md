@@ -163,5 +163,34 @@ When discussing 3D objects and geometry in computer graphics, a "primitive objec
 
 Here's the example to create a primitive object using code:
 ```c
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
+public class createRotateCube : MonoBehaviour
+{
+    GameObject cube;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        // Create a cube primitive
+        cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+
+        // Set the position of the cube
+        cube.transform.position = new Vector3(0, 0, 0);
+
+        // Set the scale of the cube
+        cube.transform.localScale = new Vector3(1, 1, 1);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        // Rotate the cube
+        cube.transform.Rotate(new Vector3(0, 30, 0) * Time.deltaTime);
+    }
+}
 ```
+Here's the result:
+![Alt text](<prim.png>)
