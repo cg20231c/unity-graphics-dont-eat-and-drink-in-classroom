@@ -143,3 +143,5 @@ public class CreateMesh : MonoBehaviour
     }
 }
 ```
+Here's the result:
+![Alt text](<mesh.png>)
