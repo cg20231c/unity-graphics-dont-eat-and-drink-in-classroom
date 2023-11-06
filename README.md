@@ -145,3 +145,23 @@ public class CreateMesh : MonoBehaviour
 ```
 Here's the result:
 ![Alt text](<mesh.png>)
+
+### Primitive Object
+A primitive object typically refers to simple and standard shapes or elements that serve as the building blocks for creating more complex 3D models. These primitives are basic geometrical shapes and include objects like:
+
+When discussing 3D objects and geometry in computer graphics, a "primitive object" typically refers to simple and standard shapes or elements that serve as the building blocks for creating more complex 3D models. These primitives are basic geometrical shapes and include objects like:
+
+1. Cube/Box: A six-sided object where each side is a square. It's often referred to as a box or a cube. Each face is made up of two triangles, so it has 12 triangles or faces in total.
+
+2. Sphere: A perfectly round geometrical object where all points on its surface are equidistant from the center point. It's made up of many vertices, edges, and faces (triangles) to approximate its round shape.
+
+3. Cylinder: A solid geometric figure with straight parallel sides and a circular or oval cross-section. It has three major components: the top and bottom circular faces and the curved side.
+
+4. Cone: Similar to a cylinder but with a pointed top at a single vertex and a circular base. It also has a curved surface connecting the base to the vertex.
+
+5. Plane/Quad: A flat, two-dimensional surface defined by four vertices and two triangles. It's also called a quad when it consists of four sides forming a rectangle.
+
+Here's the example to create a primitive object using code:
+```c
+
+```
