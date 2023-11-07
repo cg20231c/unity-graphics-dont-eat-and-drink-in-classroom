@@ -144,7 +144,7 @@ public class CreateMesh : MonoBehaviour
 }
 ```
 Here's the result:
-![Alt text](<mesh.png>)
+![Alt text](<img/mesh.png>)
 
 ### Primitive Object
 A primitive object typically refers to simple and standard shapes or elements that serve as the building blocks for creating more complex 3D models. These primitives are basic geometrical shapes and include objects like:
@@ -193,7 +193,7 @@ public class createRotateCube : MonoBehaviour
 }
 ```
 Here's the result:
-![Alt text](<prim.png>)
+![Alt text](<img/prim.png>)
 
 ### Geometry Dimension 
 Geometry dimension refers to type of dimension of objects that usually used in the realm of geometry.
